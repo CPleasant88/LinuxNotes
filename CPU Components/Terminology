@@ -10,4 +10,3 @@ SATA0 = Primary device
 1024 MB = 1 GB
 bit>byte>kilo b>mega b>giga b>tera b>para b
 MBR = master boot record
-EXT4 - type of file system, VG - volume group, LV - logical volume
