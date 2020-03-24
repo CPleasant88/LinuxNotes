@@ -1,0 +1,12 @@
+CPU = Central Processing Unit
+RAM = Random Access Memory
+Hard Drive = Long Term Memory
+HDD = Hard Disk Drive
+SSD = Solid State Drive
+* CR 2032 Battery on the Motherboard is strictly for time keeping
+GPU = Graphical Processing Unit
+BIOS = Basic Input/Output System
+SATA0 = Primary device
+1024 MB = 1 GB
+bit>byte>kilo b>mega b>giga b>tera b>para b
+MBR = master boot record
