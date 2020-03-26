@@ -1,0 +1,9 @@
+init 0 = shut down
+reboot now = reboot
+cd / = change directory
+cd - = takes you to previous directory
+pwd (print working directory) = shows you where you are
+ls (list) = shows all folders under root
+cd .. = takes you up a folder
+ls -l = lists the contents in long format
+cd ~ = returns to home directory of current user 

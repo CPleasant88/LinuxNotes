@@ -1,1 +1,15 @@
 EXT4 - type of file system, VG - volume group, LV - logical volume
+Power Supply --> BIOS --> checking the hard drive for the mbr
+1024 MB = 1 GB
+bit->byte->kilo b->mega b->giga b->tera b->para b
+different stages of bits show how much the CPU can relay
+software/OS (Operating System) contains a Kernel which in turns acts a middle man to the CPU
+GUI = graphical user interface - anything interactive with a computer (mouse, screen, keyboard)
+CLI = command line interface - texting
+both GUI and CLI interacts with the Kernel; CLI interacts with the Kernal via The Shell
+ISO file = image based information from CD/DVD format
+thin provisioning - give it via installments; allocates data storage given to use as needed
+thick provisioning - give it via bulk which in turn wastes unused data
+Naming Scheme = company name.location.function.number
+tilde (~) = represents home directory
+3 forms of "root"... root=super user; /=file system root; /root=home directory root user 
