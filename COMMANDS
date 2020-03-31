@@ -23,3 +23,5 @@ cp = copy file
 mv = move file
 scp = secure copy
 rsync = synchronizes files
+> overwrites content
+>> appends
