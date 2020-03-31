@@ -12,4 +12,17 @@ thin provisioning - give it via installments; allocates data storage given to us
 thick provisioning - give it via bulk which in turn wastes unused data
 Naming Scheme = company name.location.function.number
 tilde (~) = represents home directory
-3 forms of "root"... root=super user; /=file system root; /root=home directory root user 
+3 forms of "root"... root=super user; /=file system root; /root=home directory root user
+VM Tools help synchronize/manage/communicate the Host with the guest/clients
+/bin -- commands for the regular & super user
+/sbin -- commands for the super user
+/boot -- holds important files for boot-up process, including Linux Kernel
+/etc -- contains application's configuration files
+/home -- home directory for regular user
+/mnt -- temp. mount directory for mounting file systems
+/opt -- contains third party application software
+/var -- contents of this file are expected to grow
+. = pwd
+.. = parent directory
+.filename -- hidden file
+absolute path -- do anything from anywhere...
