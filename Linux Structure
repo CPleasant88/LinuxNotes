@@ -1,0 +1,21 @@
+/ -- Root File System
+/bin -- Essential User Binaries
+/boot -- Static Boot
+/cdrom -- Mount Point for CDROMs *
+/dev -- Device Files
+/etc -- Host-Specific System Configuration
+/home -- User Home Directories
+/lib -- Essential Shared Libraries and Kernel Modules
+/lost+found -- Recovered Files/Kdump Files
+/media -- Removable Media
+/mnt -- Temporary Mount Points
+/opt -- Optional Packages
+/proc -- Kernel and Process Files
+/root -- Root Home Directory
+/run -- Application State Files
+/sbin -- System Administration Binaries
+/selinux -- SELinux Virtual File System
+/srv -- Service Data
+/tmp -- Temporary Files
+/usr -- User Binaries and Read-Only Data
+/var -- Variable Data Files

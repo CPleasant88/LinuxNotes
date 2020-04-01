@@ -25,3 +25,4 @@ scp = secure copy
 rsync = synchronizes files
 > overwrites content
 >> appends
+| grep -i = looks for specific files with given name
