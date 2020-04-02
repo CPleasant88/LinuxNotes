@@ -19,3 +19,12 @@
 /tmp -- Temporary Files
 /usr -- User Binaries and Read-Only Data
 /var -- Variable Data Files
+***
+/bin -- commands for the regular & super user
+/sbin -- commands for the super user
+/boot -- holds important files for boot-up process, including Linux Kernel
+/etc -- contains application's configuration files
+/home -- home directory for regular user
+/mnt -- temp. mount directory for mounting file systems
+/opt -- contains third party application software
+/var -- contents of this file are expected to grow
