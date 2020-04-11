@@ -29,3 +29,6 @@
 /opt -- contains third party application software
 /var -- contents of this file are expected to grow
 /etc/sudoers -- config file for root access
+/etc/passwd -- holds acct. information
+/etc/shadow -- holds password information
+/etc/group -- holds group information

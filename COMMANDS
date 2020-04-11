@@ -37,3 +37,8 @@ usermod -aG wheel newuser = add user to group
 gpasswd -d user group
 groupdel group
 usermod -c "Information" account = adds comment to user account
+chown newowner file = change owner of group/file
+service "sshd" "status/start/stop"
+crontab -e = edit crontab file
+crontab -l = list files
+crontab -r = remove files
