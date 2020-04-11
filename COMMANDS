@@ -28,3 +28,12 @@ rsync = synchronizes files
 | grep -i = looks for specific files with given name
 vi = editor
 chkconfig = updates and queries runlevel information info for system services
+* = wildcard to list anything
+| = takes the output on the command line and directs it to the new input
+ll = long list
+su = switch user
+sudo = super user do
+usermod -aG wheel newuser = add user to group
+gpasswd -d user group
+groupdel group
+usermod -c "Information" account = adds comment to user account

@@ -22,3 +22,5 @@ Run Levels: 0-Shut Down; 1-Single User Mode; 2-Multi User w/no NFS (no networkin
 /home, /opt and /var will fluctuate with storage
 SSHD -- secure shell daemon; runs on port 22
 443 -- https; 80 -- http
+bash -- Bourne Again Shell
+3 permission category includes: owner, group and others

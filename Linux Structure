@@ -28,3 +28,4 @@
 /mnt -- temp. mount directory for mounting file systems
 /opt -- contains third party application software
 /var -- contents of this file are expected to grow
+/etc/sudoers -- config file for root access
