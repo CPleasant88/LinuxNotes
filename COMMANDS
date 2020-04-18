@@ -33,12 +33,17 @@ chkconfig = updates and queries runlevel information info for system services
 ll = long list
 su = switch user
 sudo = super user do
-usermod -aG wheel newuser = add user to group
-gpasswd -d user group
-groupdel group
+usermod -aG wheel username <-- add user to group
+passwd                  <-- updates p/w for new account
+gpasswd -d user group   <-- delete/remove user from group
+groupdel group          <-- delete the entire group
 usermod -c "Information" account = adds comment to user account
 chown newowner file = change owner of group/file
-service "sshd" "status/start/stop"
+service sshd "status/start/stop"
 crontab -e = edit crontab file
 crontab -l = list files
 crontab -r = remove files
+useradd
+chage = p/w renewal after login
+id "username"     <-- checks basic user statistics
+seq     <-- creates a sequence of files
