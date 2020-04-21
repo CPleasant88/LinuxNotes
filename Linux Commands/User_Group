@@ -13,3 +13,4 @@ usermod -aG group username <-- add user to group
 su -- switch user
 sudo -- super user do
 id username -- checks basic user statistics
+chage -d 0 username -- force p/w reset at login

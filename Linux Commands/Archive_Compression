@@ -1,0 +1,6 @@
+scp file1.txt server2/tmp -- Securely copy file1.txt to server2 in /tmp directory
+rsync -a /home/apps /backup/ -- Synchronize contents in /home/apps directory with /backup directory
+tar -cf home.tar home -- Creates archive file called ‘home.tar’ from file ‘home’
+tar -xf files.tar -- Extract archive file ‘files.tar’
+tar -zcvf home.tar.gz source-folder -- Creates gzipped tar archive file from source folder
+gzip file -- Compression a file with .gz extension

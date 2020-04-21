@@ -20,15 +20,11 @@ chkconfig = updates and queries runlevel information info for system services
 * -- wildcard to list anything
 | -- takes the output on the command line and directs it to the new input
 ll -- long list
-usermod -aG wheel username <-- add user to group
-passwd                  <-- updates p/w for new account
-gpasswd -d user group   <-- delete/remove user from group
-groupdel group          <-- delete the entire group
-usermod -c "Information" account = adds comment to user account
-chown newowner file = change owner of group/file
 service sshd "status/start/stop"
 crontab -e = edit crontab file
 crontab -l = list files
 crontab -r = remove files
-chage -d 0 username  <= force p/w reset at login
 seq -- creates a sequence of files
+./configure
+make
+make install

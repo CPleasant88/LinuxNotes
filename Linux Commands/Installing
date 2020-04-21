@@ -1,0 +1,3 @@
+rpm -i pkg_name.rpm -- Install an rpm package
+rpm -e pkg_name -- Removes an rpm package
+dnf install pkg_name -- Install package using dnf utility

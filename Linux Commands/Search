@@ -1,0 +1,5 @@
+grep ‘pattern’ files -- Search for a given pattern in files
+grep -r pattern dir -- Search recursively for a pattern in a given directory
+locate file -- Find all instances of the file
+find /home/ -name “index” -- Find file names that begin with ‘index’ in /home folder
+find /home -size +10000k -- Find files greater than 10000k in the home folder

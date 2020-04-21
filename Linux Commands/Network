@@ -1,0 +1,11 @@
+ip addr show -- Displays IP addresses and all the network interfaces
+ip address add 192.168.0.1/24 dev eth0 -- Assigns IP address 192.168.0.1 to interface eth0
+ifconfig -- Displays IP addresses of all network interfaces
+ping -- PING command sends an ICMP echo request to establish a connection to server/PC
+whois domain -- Retrieves more information about a domain name
+dig domain -- Retrieves DNS information about the domain
+dig -x host -- Performs reverse lookup on a domain
+host google.com -- Performs an IP lookup for the domain name
+hostname -i -- Displays local IP address
+wget file_name -- Downloads a file from an online source
+netstat -pnltu -- Displays all active listening ports

@@ -1,0 +1,4 @@
+ssh user@host -- Securely connect to host as user
+ssh -p port_number user@host -- Securely connect to host using a specified port
+ssh host -- Securely connect to the system via SSH default port22
+telnet host -- Connect to host via telnet default port23

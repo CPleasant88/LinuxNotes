@@ -1,0 +1,14 @@
+ps -- Display currently active processes
+ps aux | grep process -- Searches for the id of the process
+pmap -- Displays memory map of processes
+top -- Displays all running processes
+kill pid -- Terminates process with a given pid
+killall process -- Kills/Terminates all processes named process
+pkill process-name -- Sends a signal to a process with its name
+bg -- Resumes suspended jobs in the background
+fg -- Brings suspended jobs to the foreground
+fg jobname -- Brings jobname to the foreground
+lsof -- Lists files that are open by processes
+renice 19 PID -- Makes a process run with very low priority
+pgrep firefox -- Find Firefox process ID
+pstree -- Visualizing processes in tree model

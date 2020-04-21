@@ -1,0 +1,6 @@
+df -h -- Displays free space on mounted systems
+df -i -- Displays free inodes on filesystems
+fdisk -l -- Shows disk partitions, sizes, and types
+du -sh -- Displays disk usage in the current directory in a human-readable format
+findmnt -- Displays target mount point for all filesystems
+mount device-path mount-point -- Mount a device
