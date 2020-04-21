@@ -1,0 +1,18 @@
+Enable Service
+1) check service status
+    service sshd status
+
+2) start service
+    service sshd start
+
+3) stop service
+    service sshd stop
+
+Enable Service Globally
+1) check service
+    chkconfig --list | grep -i servicename
+
+2) enable service on default runlevels
+    chkconfig sshd on
+
+chkconfig --help

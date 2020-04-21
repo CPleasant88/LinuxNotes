@@ -1,0 +1,5 @@
+Change runlevel
+  init 0  <-- replace 0 with appropriate runlevel number
+
+RunLevel configuration file
+  /etc/inittab

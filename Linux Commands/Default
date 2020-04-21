@@ -17,6 +17,7 @@ tab -- completes file names/absolute paths
 | grep -i -- looks for specific files with given name
 vi -- editor
 chkconfig = updates and queries runlevel information info for system services
+runlevel = displays current runlevel
 * -- wildcard to list anything
 | -- takes the output on the command line and directs it to the new input
 ll -- long list
