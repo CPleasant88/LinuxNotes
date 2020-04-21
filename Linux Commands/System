@@ -1,0 +1,12 @@
+uname -- displays Linux system information
+uname -r -- displays kernel release information
+uptime -- displays how long the system has been running including load average
+hostname -- shows the system hostname
+hostname -i -- displays the IP address of the system
+last reboot -- shows system reboot history
+date -- displays current system date and time
+timedatectl -- query and change the system clock
+cal -- displays the current calendar month and day
+w -- displays currently logged in users in the system
+whoami -- displays who you are logged in as
+finger username -- displays information about the user

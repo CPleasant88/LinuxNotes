@@ -19,7 +19,7 @@
 /tmp -- Temporary Files
 /usr -- User Binaries and Read-Only Data
 /var -- Variable Data Files
-***
+DETAILED:
 /bin -- commands for the regular & super user
 /sbin -- commands for the super user
 /boot -- holds important files for boot-up process, including Linux Kernel

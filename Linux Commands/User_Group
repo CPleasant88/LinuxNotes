@@ -1,0 +1,15 @@
+id -- show the active user is with login and group
+last -- show last logins on the system
+who -- show who is logged on the system
+groupadd -- add group
+passwd -- updates p/w for new account
+gpasswd -d user group -- delete/remove user from group
+groupdel group -- delete the entire group
+useradd -c "Info" user -- add information into the comment portion of a user
+userdel user -- delete user
+adduser/useradd -- add user
+usermod -- modify user information
+usermod -aG group username <-- add user to group
+su -- switch user
+sudo -- super user do
+id username -- checks basic user statistics

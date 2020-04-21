@@ -1,0 +1,34 @@
+init 0 -- shut down
+reboot now -- reboot
+cd / = change directory
+cd - = takes you to previous directory
+ls (list) = shows all folders under root
+cd .. = takes you up a folder
+ls -l = lists the contents in long format
+cd ~ = returns to home directory of current user
+history -- shows previous commands
+ctrl + l/clear -- clears screen
+ctrl + c -- cancel command line
+double tab -- shows available directory/files in folder
+tab -- completes file names/absolute paths
+--help -- in a directory shows capable flags/options that you can command
+> -- overwrites content
+>> -- appends
+| grep -i -- looks for specific files with given name
+vi -- editor
+chkconfig = updates and queries runlevel information info for system services
+* -- wildcard to list anything
+| -- takes the output on the command line and directs it to the new input
+ll -- long list
+usermod -aG wheel username <-- add user to group
+passwd                  <-- updates p/w for new account
+gpasswd -d user group   <-- delete/remove user from group
+groupdel group          <-- delete the entire group
+usermod -c "Information" account = adds comment to user account
+chown newowner file = change owner of group/file
+service sshd "status/start/stop"
+crontab -e = edit crontab file
+crontab -l = list files
+crontab -r = remove files
+chage -d 0 username  <= force p/w reset at login
+seq -- creates a sequence of files

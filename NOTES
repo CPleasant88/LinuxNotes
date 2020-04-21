@@ -21,6 +21,13 @@ absolute path -- do anything from anywhere...
 Run Levels: 0-Shut Down; 1-Single User Mode; 2-Multi User w/no NFS (no networking); 3-Multi User Mode; 4-not used/research; 5-X11 GUI; 6-reboot
 /home, /opt and /var will fluctuate with storage
 SSHD -- secure shell daemon; runs on port 22
-443 -- https; 80 -- http
+443 -- https; 80 -- http; 20/21 -- FTP
 bash -- Bourne Again Shell
 3 permission category includes: owner, group and others
+pid     <= process id
+ISP   <= Internet Service Provider
+OSI model... A.ll P.eople S.eem T.o N.eed D.ata P.rocessing = Application>Presentation>Session>Transport>Network>Data>Physical
+routers connect to other networks using packets
+switches connect to other networks using frames
+demarc zone represents the negotiating field
+MAC address -- network hardware

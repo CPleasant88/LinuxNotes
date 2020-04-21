@@ -1,0 +1,25 @@
+ls -s -- List directory in alphabetical order
+ls -al -- Lists files, both regular & hidden files and their permissions as well
+pwd(print working directory) -- Displays the current directory file path
+mkdir directory_name -- Creates a new directory
+rm file_name -- Removes a file
+rm -f file_name -- Forcefully removes a file
+rm -drvf -- to delete a folder recursively with "y" applied
+rm fil*/-f fil* -- removes a file/force removes a file(s)
+rm -r directory_name -- Removes a directory recursively
+rm -rf directory_name -- Removes a directory forcefully and recursively
+cp file1 file2 -- Copies the contents of file1 to file2
+cp -r dir1 dir2 -- Recursively copies dir1 to dir2; dir2 is created if it does not exist
+mv file1 file2 -- Renames file1 to file2
+scp = secure copy
+rsync = synchronizes files
+ln -s [absolute path] link_name -- Creates a symbolic link to file_name
+touch file_name -- Creates a new file
+cat > file_name -- Places standard input into a file
+more file_name -- Outputs the contents of a file
+head file_name -- Displays the first 10 lines of a file
+tail file_name -- Displays the last 10 lines of a file
+gpg -c file_name -- Encrypts a file
+gpg file_name.gpg -- Decrypts a file
+wc -- Prints the number of bytes, words and lines in a file
+xargs -- Executes commands from standard input

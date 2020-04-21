@@ -1,0 +1,12 @@
+dmesg -- displays bootup messages
+cat /proc/cpuinfo -- displays more information about CPU (e.g model/model name/cores/vendor id)
+cat /proc/meminfo -- displays more information about hardware memory (e.g. total and free memory)
+lshw -- displays information about system’s hardware configuration
+lsblk -- displays block devices related information
+free -m -- displays free and used memory in the system (-m flag indicates memory in MB)
+lspci -tv -- displays PCI devices in a tree-like diagram
+lsusb -tv -- displays USB devices in a tree-like diagram
+dmidecode -- displays hardware information from the BIOS
+hdparm -i /dev/xda -- displays information about disk data
+hdparm -tT /dev/xda -- conducts a read speed test on device xda
+badblocks -s /dev/xda -- tests for unreadable blocks on disk

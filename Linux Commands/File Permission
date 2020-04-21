@@ -1,0 +1,6 @@
+chmod octal file-name -- change the permissions of file to octal
+chmod 777 /data/test.c -- set RWX permission for owner.group.others
+chmod 755 /data/test.c -- set RWX permission for owner; rx for group and world
+chown owner-user file -- change owner of the file
+chown owner-user:owner-group file-name -- change owner and group owner of the file
+chown owner-user:owner-group directory -- change owner and group owner of the directory
