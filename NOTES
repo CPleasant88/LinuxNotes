@@ -31,3 +31,34 @@ routers connect to other networks using packets
 switches connect to other networks using frames
 demarc zone represents the negotiating field
 MAC address -- network hardware
+
+_04.21.20_
+Net Addresses:
+      10 -- Class A (Large Business like Amazon); 172 -- Class B (Medium sized business) ; 192 -- Class C (Home Business/Personal)
+
+      Class A, B and C are private I.P. addresses
+        Class A Private: 10.0.0.0
+        Class B Private: 172.16.0.0
+        Class C Private: 192.168.0.0
+        Loopback: 127.0.0.0 (checks the internal network stack/checks if your network card is working)
+
+Subnetting helps breakdown a large network by segmenting a large number of I.P. addresses into more manageable smaller networks
+      -- each small network can be for departments/devices/VLANs
+
+NAT <-- Network Address Translation
+DNS <-- Domain Name Server/Service; name to number service
+Local DNS / Internal DNS / External DNS
+
+DHCP - Dynamic Host Configuration Protocol
+      uses port 67 to request an I.P. address from a DHCP provider (typically the router or DHCP server on larger networks)
+
+Different DNS Records:
+      - A or AAAA
+      - CNAME
+      - MX
+
+LAN  <=Local Area Network
+      - private, internal network
+
+WAN  <=Wide Area Network
+      - public, external network

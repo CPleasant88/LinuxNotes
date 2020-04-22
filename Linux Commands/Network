@@ -9,3 +9,12 @@ host google.com -- Performs an IP lookup for the domain name
 hostname -i -- Displays local IP address
 wget file_name -- Downloads a file from an online source
 netstat -pnltu -- Displays all active listening ports
+ifdown --
+ifup --
+/etc/sysconfig/network
+/etc/sysconfig/network-scripts
+/etc/hosts -- DNS
+      will modify your local DNS file
+/etc/network
+/etc/resolv.conf -- DNS
+      Modify your internal DNS Server

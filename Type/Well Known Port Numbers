@@ -1,0 +1,8 @@
+20/21 -- FTP
+22 -- SSH
+25 -- SMTP (Simple Mail Tranfer Protocol/Send Mail to People)
+23 -- Telnet (Unsecure SSH)
+53 -- DNS
+80 -- http
+123 -- NTP (Network Time Protocol)
+443 -- https (secure)

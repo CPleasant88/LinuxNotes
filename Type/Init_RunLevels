@@ -1,4 +1,4 @@
-Change runlevel
+Change Runlevel
   init 0  <-- replace 0 with appropriate runlevel number
 
 RunLevel configuration file
