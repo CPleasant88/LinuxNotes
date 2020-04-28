@@ -5,12 +5,23 @@ groupadd -- add group
 passwd -- updates p/w for new account
 gpasswd -d user group -- delete/remove user from group
 groupdel group -- delete the entire group
-useradd -c "Info" user -- add information into the comment portion of a user
-userdel user -- delete user
-adduser/useradd -- add user
+
+Create or Add New User:
+    # useradd -c "Info" user -- add information into the comment portion of a user
+    # adduser username
+    # useradd username
+
+Delete a User Account:
+    # userdel user -- delete user
+
 usermod -- modify user information
 usermod -aG group username <-- add user to group
 su -- switch user
 sudo -- super user do
 id username -- checks basic user statistics
-chage -d 0 username -- force p/w reset at login
+chage -d 0 username <-- force p/w reset at login
+
+
+Unlock User Account:
+    # passwd -S username <-- gives the status of an account to see if it's locked/unlocked
+    # passwd --status username <-- same as command above
