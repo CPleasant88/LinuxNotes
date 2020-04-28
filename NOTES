@@ -71,7 +71,11 @@ Firewall aka IPTables:
         - input, output and forward
         - /etc/sysconfig/iptables <-- firewall rules are saved here by default
         - /var/log/messages  <-- firewall logs are saved here
-        - iptables -L <-- list firewall rules in CHAIN
+
     - CHAIN runs in RAM
 
-NFS - Network File Server
+NFS: Network File Server
+
+Mounts:
+    /etc/mtab <-- display information about manually mounted directories
+    /etc/fstab  <-- for automatically mounting, put mount information here

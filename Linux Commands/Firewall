@@ -1,0 +1,16 @@
+Read files in the iptables:
+    # iptables -L  <-- list firewall rules in CHAIN
+    # iptables -nL  <-- list firewall rules in CHAIN with rule numbers
+
+Modify Contents of iptable:
+    # iptables -D INPUT 0  <-- deletes line number from the INPUT chain
+    # iptables -F  <-- flush contents of CHAIN
+    # system-config-firewall  <-- graphical modification tool for firewall/iptables
+        * this updates CHAIN and iptables file simultaneously
+
+  Start/Stop/Reload iptable service:
+    # service iptables start  <-- start iptables service
+    # service iptables restart  <-- restarts service and reloads rules from iptables file into CHAIN
+    # service iptables save  <-- saves current rules from CHAIN to iptables file
+    # service iptables stop  <-- stops the CHAIN (no firewall)
+    

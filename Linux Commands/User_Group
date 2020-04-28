@@ -1,27 +1,37 @@
-id -- show the active user is with login and group
-last -- show last logins on the system
-who -- show who is logged on the system
 groupadd -- add group
 passwd -- updates p/w for new account
 gpasswd -d user group -- delete/remove user from group
 groupdel group -- delete the entire group
 
+Check user/account info:
+    # id username  <-- checks basic user statistics
+    # id  <-- show the active user is with login and group
+    # last  <-- show last logins on the system
+    # who  <-- show who is logged on the system
+
+Change user:
+    # su  <-- switch user to root
+    # su -  <-- switch user and log in as root and switch to root's home directory
+    # sudo  <-- run command as root w/o switching to root
+
 Create or Add New User:
-    # useradd -c "Info" user -- add information into the comment portion of a user
-    # adduser username
-    # useradd username
+    # useradd -c "Info" username  <-- add information into the comment portion of a user
+    # adduser username / # useradd username  <-- add user account
 
 Delete a User Account:
-    # userdel user -- delete user
+    # userdel user  <-- delete user
 
-usermod -- modify user information
-usermod -aG group username <-- add user to group
-su -- switch user
-sudo -- super user do
-id username -- checks basic user statistics
-chage -d 0 username <-- force p/w reset at login
+Modify an User Account:
+    # usermod  <-- modify user information
+    # usermod -aG group username  <-- add user to group
 
+Update Password Expiration:
+    # chage -d 7 username <-- force p/w reset at login
+    # chage -W 7 username  <-- changes the number of days before user is prompted to change password
+    # chage -l username  <-- shows account aging info
 
-Unlock User Account:
+Check Status, Lock and Unlock User Account:
+    # passwd -l username <-- lock user account
     # passwd -S username <-- gives the status of an account to see if it's locked/unlocked
     # passwd --status username <-- same as command above
+    # passwd -u username  <-- unlocks the user account

@@ -2,7 +2,8 @@
 22 -- SSH
 25 -- SMTP (Simple Mail Tranfer Protocol/Send Mail to People)
 23 -- Telnet (Unsecure SSH)
-53 -- DNS
+53 -- DNS (TCP and UDP)s
 80 -- http
 123 -- NTP (Network Time Protocol)
 443 -- https (secure)
+111/2049 -- NFS (TCP and UDP)
