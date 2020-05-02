@@ -32,6 +32,7 @@ switches connect to other networks using frames
 demarc zone represents the negotiating field
 MAC address -- network hardware
 
+
 _04.21.20_
 Net Addresses:
       10 -- Class A (Large Business like Amazon); 172 -- Class B (Medium sized business) ; 192 -- Class C (Home Business/Personal)
@@ -63,6 +64,7 @@ LAN  <=Local Area Network
 WAN  <=Wide Area Network
       - public, external network
 
+
 _04.27.2020_
 Firewall aka IPTables:
     - Iptables introduced in 2.4 kernel; process to filter network packets as they enter network
@@ -79,3 +81,34 @@ NFS: Network File Server
 Mounts:
     /etc/mtab <-- display information about manually mounted directories
     /etc/fstab  <-- for automatically mounting, put mount information here
+
+
+_05.02.2020_
+
+DNS Resolution Process:
+1) /etc/hosts <-- local DNS file
+
+2) Internal DNS server (Port 53)
+
+3) External DNS server
+    /etc/resolv.conf <-- holds DNS server info
+
+4) Ping the actual I.P. address
+
+
+* TCP is best described as a 3-Way Handshake
+
+YUM = yellowdog update modifier
+    --repositories holds packages
+    --Process includes (automatically):
+        1) searches repo
+        2) loads application and all dependencies
+*Must install appropriate repo in order to download appropriate package
+
+RPM = redhat packet manager
+    --local packages (applications)
+    --packages download directly to system
+    --RPM command to install that package
+*packages may require dependencies; RPM forces you to find dependencies manually
+
+2 forms of Repo: Internal and External/Public Repo

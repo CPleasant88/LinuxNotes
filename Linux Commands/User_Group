@@ -1,6 +1,7 @@
 groupadd -- add group
 passwd -- updates p/w for new account
 gpasswd -d user group -- delete/remove user from group
+usermod -G
 groupdel group -- delete the entire group
 
 Check user/account info:

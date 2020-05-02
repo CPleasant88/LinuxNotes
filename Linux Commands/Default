@@ -25,6 +25,7 @@ service sshd "status/start/stop"
 crontab -e = edit crontab file
 crontab -l = list files
 crontab -r = remove files
+
 seq -- creates a sequence of files
 ./configure
 make
