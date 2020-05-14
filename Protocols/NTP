@@ -1,0 +1,130 @@
+NTP
+What is NTP?
+
+Network Time Protocol (NTP) - is a networking protocol used for time synchronization between a client server and centralized time server.
+
+It is used to synchronize the time on your Linux system with a centralized NTP server. The reason why we use NTP servers is because time accuracy degrades when using an Internet Time Server because of asymmetrical latency (delays between when the time packets leave the time source and when they arrive at your network).
+
+
+NTP - Network Time Protocol
+What port does NTP use? TCP 123
+
+SYNTAX :
+scp options source destination
+
+Option :
+      -p  Process priority
+      -i  Jail directory
+
+
+
+
+
+  ################################################################################
+                            HOW TO CONFIGURE NTP
+
+1) Install the NTP daemon/service.
+    # yum install ntp -y
+
+2) Start the ntp service
+    # service ntpd start
+    # chkconfig ntpd on
+
+3) open tcp and udp ports 123
+    # iptables -I INPUT -p tcp --dport 123 -j ACCEPT
+    # iptables -I INPUT -p udp --dport 123 -j ACCEPT
+    # service iptables save
+    # service iptables restart
+
+4) update ntp .conf file:
+    # vi /etc/ntp.conf
+    # service ntpd restart
+
+5) validate server's time spacing
+    # ntpq -p
+
+6) query ntp with specific server
+    # ntpdate -q x.x.x.x (e.g pool.ntp.org)
+
+7) update ntp with a specific server
+    # ntpdate -u 192.128.1.229
+
+
+
+
+  Important terms to know:
+
+  iburst:
+
+  * NOTE: the terms below appear when running ntpq -p.
+  remote -
+  refid -
+  st -
+  t -
+  when -
+  poll -
+  reach -
+  delay -
+  offset -
+  jitter -
+
+IBURST sends a burst of eight packets when the server is unreachable (tries to find out if a host is reachable), and then shorten the time until the first sync. We specify the NTP IBURST for faster clock synchronization. This option is considered “aggressive” by some public NTP servers. If an NTP server is unresponsive, the IBURST mode continues to send frequent queries until the server responds and time synchronization starts.
+
+############################################################################################################################################################################################################################
+
+
+See where time is pulling from:
+  # ntpq -p
+
+
+Set date from the command line:
+  # date +%Y%m%d -s "20120418"
+
+Set time from the command line:
+  # date +%T -s "11:14:00"
+
+Set time and date from the command line
+  # date -s "19 APR 2012 11:14:00"
+
+Linux check date from command line
+  # date
+
+
+Set hardware clock
+
+The hardware clock is the clock that runs in you PC hardware even if you disconnect it from the main power supply. This is because it has a lithium battery in the modern computers and another type of battery in the old ones.
+
+Show hardware clock:
+  # hwclock --show
+
+
+Let's set the hardware clock to local time:
+  # hwclock --set --date="2012-04-19 16:45:05" --localtime
+
+
+
+Update from the command line against a time server
+
+You can update the clock manually, without the need of the daemon with ntpdate
+  # ntpdate 129.6.15.28
+
+
+
+
+
+
+
+
+
+In NTP hierarchy, Stratum-0 level device has the most precise time, Since Stratum-1 NTP Server is synchronizing its time from Stratum-0 time device, Stratum-1 is less precise than Stratum-0 and so on.
+
+NTP Stratum levels up to 15 are valid Stratum Levels. In Network Time Protocol (NTP), Stratum-16 is used to indicate that a device time is not synchronized.
+
+
+
+What is NTP Server Stratum?
+https://www.worldtimesolutions.com/support/ntp/What_is_NTP_server_stratum.html
+
+
+What’s the Difference Between the Four Stratum Levels?
+https://www.mwrf.com/technologies/systems/article/21849619/whats-the-difference-between-the-four-stratum-levels

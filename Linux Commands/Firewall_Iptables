@@ -3,8 +3,27 @@ Read files in the iptables:
     # iptables -nL  <-- list firewall rules in CHAIN with rule numbers
 
 Modify Contents of iptable:
-    # iptables -D INPUT 0  <-- deletes line number from the INPUT chain
-    # iptables -F  <-- flush contents of CHAIN
+    # iptables -A
+    # iptables -I
+
+
+
+Insert iptable rule to top of the CHAIN with -I flag:
+    # iptables -I INPUT -p tcp --dport 123 -j ACCEPT
+    # iptables -I INPUT -p udp --dport 123 -j ACCEPT
+
+
+Append iptable rule to bottom of the CHAIN with -A flag:
+    # iptables -A INPUT -p tcp --dport 123 -j ACCEPT
+    # iptables -A INPUT -p udp --dport 123 -j ACCEPT
+
+Delete line number 0 from the INPUT chain:
+    # iptables -D INPUT 0
+
+Flush all iptables rules from chain:
+    # iptables -F
+
+    
     # system-config-firewall  <-- graphical modification tool for firewall/iptables
         * this updates CHAIN and iptables file simultaneously
 
@@ -13,4 +32,3 @@ Modify Contents of iptable:
     # service iptables restart  <-- restarts service and reloads rules from iptables file into CHAIN
     # service iptables save  <-- saves current rules from CHAIN to iptables file
     # service iptables stop  <-- stops the CHAIN (no firewall)
-    

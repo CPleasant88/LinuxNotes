@@ -9,13 +9,17 @@ host google.com -- Performs an IP lookup for the domain name
 hostname -i -- Displays local IP address
 wget file_name -- Downloads a file from an online source
 netstat -pnltu -- Displays all active listening ports
-ifdown --
-ifup --
-/etc/sysconfig/network
+
+Disable/Enable interface:
+
+# ifdown eth0     <-- disable/turn off interface eth0
+# ifup eth0       <-- enable interface eth0
+
+
+Network Files:
+
+/etc/sysconfig/network                    <-- holds global network configuration settings
 /etc/sysconfig/network-scripts/ifcfg-eth0 <-- holds configuration for eth0 interface
 /etc/sysconfig/network-scripts/ifcfg-lo   <-- holds configurattions for the loopback interface
-/etc/hosts -- DNS
-      will modify your local DNS file
-/etc/network
-/etc/resolv.conf -- DNS
-      Modify your internal DNS Server
+/etc/hosts                                <-- holds local DNS information
+/etc/resolv.conf                          <-- holds DNS Server(s) name/information
