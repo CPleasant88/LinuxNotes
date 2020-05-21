@@ -10,10 +10,14 @@ hostname -i -- Displays local IP address
 wget file_name -- Downloads a file from an online source
 netstat -pnltu -- Displays all active listening ports
 
-Disable/Enable interface:
+Check name attached to IP address:
+    # nslookup 10.1.10.1    <-- resolves IP to name
+        *ping resolves name to IP
 
-# ifdown eth0     <-- disable/turn off interface eth0
-# ifup eth0       <-- enable interface eth0
+
+Disable/Enable interface:
+    # ifdown eth0     <-- disable/turn off interface eth0
+    # ifup eth0       <-- enable interface eth0
 
 
 Network Files:

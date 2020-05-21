@@ -16,3 +16,12 @@ Enable Service Globally
     chkconfig sshd on
 
 chkconfig --help
+
+RunLevels:
+  0 - Shut Down
+  1 - Single User Mode (no networking)
+  2 - Multi User w/no NFS (no networking)
+  3 - Multi User Mode (CLI)
+  4 - not used/research
+  5 - X11 GUI
+  6 - reboot
