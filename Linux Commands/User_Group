@@ -4,6 +4,9 @@ gpasswd -d user group -- delete/remove user from group
 usermod -G
 groupdel group -- delete the entire group
 
+Assign a user/account password:
+    # passwd username
+
 Check user/account info:
     # id username  <-- checks basic user statistics
     # id  <-- show the active user is with login and group
@@ -36,3 +39,9 @@ Check Status, Lock and Unlock User Account:
     # passwd -S username <-- gives the status of an account to see if it's locked/unlocked
     # passwd --status username <-- same as command above
     # passwd -u username  <-- unlocks the user account
+
+Change Primary Group of File/Directory:
+  # chgrp [OPTION]... GROUP FILE..
+
+Change Owner of File/Directory:
+  # chown newowner file/directory

@@ -7,3 +7,4 @@
 123 -- NTP (Network Time Protocol)
 443 -- https (secure)
 111/2049 -- NFS (TCP and UDP)
+67/68 -- DHCP (UDP)

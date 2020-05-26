@@ -4,9 +4,12 @@ chmod 755 /data/test.c -- set RWX permission for owner; rx for group and world
 chown owner-user file -- change owner of the file
 chown owner-user:owner-group file-name -- change owner and group owner of the file
 chown owner-user:owner-group directory -- change owner and group owner of the directory
-chown newowner file -- change owner of group/file
+chown newowner file/directory -- change owner of group/file
 
-
+Make file/directory immutable:
+  # sudo chattr +i /absolute/path
+OR
+  # sudo chattr +i -V /absolute/path
 
 chgrp
 
