@@ -1,3 +1,13 @@
+Firewall aka IPTables:
+    - Iptables introduced in 2.4 kernel; process to filter network packets as they enter network
+    - filter, NAT, mangle, raw, and security are the five tables or rule lists
+    - the built in chain for the filter table are:
+        - input, output and forward
+        - /etc/sysconfig/iptables <-- firewall rules are saved here by default
+        - /var/log/messages  <-- firewall logs are saved here
+
+    - CHAIN runs in RAM
+
 Read files in the iptables:
     # iptables -L  <-- list firewall rules in CHAIN
     # iptables -nL  <-- list firewall rules in CHAIN with rule numbers
@@ -23,7 +33,7 @@ Delete line number 0 from the INPUT chain:
 Flush all iptables rules from chain:
     # iptables -F
 
-    
+
     # system-config-firewall  <-- graphical modification tool for firewall/iptables
         * this updates CHAIN and iptables file simultaneously
 

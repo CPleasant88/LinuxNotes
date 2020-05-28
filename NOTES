@@ -69,7 +69,7 @@ _04.27.2020_
 Firewall aka IPTables:
     - Iptables introduced in 2.4 kernel; process to filter network packets as they enter network
     - filter, NAT, mangle, raw, and security are the five tables or rule lists
-    - the built in chaing for the filter table are:
+    - the built in chain for the filter table are:
         - input, output and forward
         - /etc/sysconfig/iptables <-- firewall rules are saved here by default
         - /var/log/messages  <-- firewall logs are saved here
