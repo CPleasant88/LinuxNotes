@@ -1,11 +1,28 @@
+Rsync file/directory to Remote Machine:
+# rsync -a file1/Dir1 user@10.1.10.48:/tmp
 
+Rsync Remote File/Directory to Remote Machine:
+# rsync -a user@10.1.10.32:/home/cpleasant/Avengers.tar root@10.1.10.48:/tmp
 
-scp file1.txt server2/tmp -- Securely copy file1.txt to server2 in /tmp directory
+Rsync directory/file to remote system with progress shown:
+# rsync -avh --progress /home/rsync root@10.1.10.90:/tmp/
+
 rsync -a /home/apps /backup/ -- Synchronize contents in /home/apps directory with /backup directory
-tar -cf home.tar "home dir" -- Creates archive file called ‘home.tar’ from file ‘home’
-tar -xf files.tar -- Extract archive file ‘files.tar’
-tar -zcvf home.tar.gz source-folder -- Creates gzipped tar archive file from source folder
-gzip file -- Compression a file with .gz extension
+
+Archive a file:
+# tar -cf home.tar "home dir" -- Creates archive file called ‘home.tar’ from file ‘home’
+
+Extract a tarball:
+# tar -xf files.tar -- Extract archive file ‘files.tar’
+
+View contents of a tarball:
+# tar -tf files.tar
+
+To archive and compress simultaneously:
+# tar -zcvf home.tar.gz source  <-- Creates gzipped tar archive file from source folder
+
+Compress a tarball:
+# gzip file.tar -- Compression a file with .gz extension
 
 
 cp source destination
@@ -13,6 +30,8 @@ cp source destination
 cp file1 /tmp/
 cp /home/username/file1 /tmp/
 
+Copy Local File to Remote Machine:
+# scp file1 user@10.1.10.48:/tmp
 
-scp file1 user@10.1.10.48:/tmp
-scp user@10.1.10.32:/home/cpleasant/Avengers.tar root@10.1.10.48:/tmp
+Copy remote file to remote machine:
+# scp user@10.1.10.32:/home/cpleasant/Avengers.tar root@10.1.10.48:/tmp

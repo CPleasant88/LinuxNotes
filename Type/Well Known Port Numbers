@@ -1,10 +1,30 @@
-20/21 -- FTP
-22 -- SSH
-25 -- SMTP (Simple Mail Tranfer Protocol/Send Mail to People)
-23 -- Telnet (Unsecure SSH)
-53 -- DNS (TCP and UDP)s
-80 -- http
-123 -- NTP (Network Time Protocol)
-443 -- https (secure)
-111/2049 -- NFS (TCP and UDP)
-67/68 -- DHCP (UDP)
+Commonly Used TCP/UDP Ports:
+-- FTP = TCP 21/20
+
+-- SSH = TCP 22
+
+-- Telnet = TCP 23
+
+-- Web/http = TCP 80
+
+-- SSL/https = TCP 443
+
+-- DNS = UDP 53
+
+-- DHCP = UDP 67 and 68
+
+-- SAMBA = 137-139 and 445
+    - NETBIOS = 137-139
+    - ACTIVE DIRECTORY = 445 NetBios/DNS
+
+-- SMTP (email out) = 25
+
+-- POP3 (email in) = 110
+
+-- IMAP (email in) = 143
+
+-- VPN = 1723
+
+-- KERBEROS = 88
+
+-- SNMP = 161/162 
